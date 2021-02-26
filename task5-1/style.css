@@ -5,16 +5,17 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  background-color: #f5f5f5;
 }
 
-/* STYLING OF THE HEADERS */
+/* -------------------- STYLING OF THE HEADERS -------------------- */
 
 .main-header {
   position: fixed;
   display: flex;
   padding: 0.6rem 1.4rem;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.98);
   top: 0;
   left: 0;
   z-index: 1;
@@ -62,13 +63,13 @@ ul.main-nav__items {
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: rgba(0, 0, 0, 0.6);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .main-nav__item:hover,
 .main-nav__item:active {
   opacity: 0.6;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .secondary-nav {
@@ -76,7 +77,7 @@ ul.main-nav__items {
   justify-content: center;
   width: 100%;
   margin-top: 70px;
-  background-color: rgb(70, 50, 174);
+  background-color: #6747c7;
 }
 
 ul.secondary-nav__items {
@@ -111,7 +112,7 @@ ul.secondary-nav__items__rhs {
 .secondary-nav__item a:hover,
 .secondary-nav__item a:active {
   color: rgb(176, 167, 222);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 a.login-button {
@@ -140,12 +141,12 @@ img.cart-icon {
   margin: 0;
   margin-right: 10px;
 }
-/* STYLING OF THE MAIN */
+/* -------------------- STYLING OF THE MAIN -------------------- */
 
 main a:hover,
 main a:active {
   color: rgb(39, 24, 98);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 div.main-body {
@@ -217,7 +218,7 @@ aside.ads a {
 .ad a:hover,
 .ad a:active {
   color: rgb(39, 24, 98);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 div.main-img {
@@ -319,7 +320,7 @@ ul {
   list-style: none;
 }
 
-/* STYLING OF THE WRITER'S SECTION */
+/* -------------------- STYLING OF THE WRITER'S SECTION -------------------- */
 
 section.writer {
   display: flex;
@@ -357,7 +358,7 @@ section.writer {
   font-weight: 700;
 }
 
-/* STYLING OF THE RELATED CONTENT */
+/* -------------------- STYLING OF THE RELATED CONTENT -------------------- */
 
 .related-contents {
   display: flex;
@@ -369,7 +370,7 @@ section.writer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .related-content {
@@ -408,9 +409,108 @@ a.a_style {
   font-size: 1.2rem;
 }
 
-/* STYLING OF THE COMMENTS AREA */
+/* -------------------- STYLING OF THE COMMENTS AREA -------------------- */
 
-/* STYLING OF THE BANNER */
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 150px 50px 150px;
+  padding: 0 15px;
+}
+
+.comments-comment {
+  display: flex;
+  padding: 30px 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+}
+
+.comments-comment__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.comments-comment h3 {
+  display: flex;
+  justify-content: space-between;
+  color: #551a8b;
+}
+
+.comments-comment a {
+  text-decoration: none;
+}
+
+p.comment-date {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.comments-comment.reply {
+  margin: 0 0 10px 100px;
+  width: inherit;
+}
+
+.comments-comment__image {
+  margin: 0 20px 0 0;
+}
+
+.comments-comment__image img {
+  height: 58px;
+  border-radius: 50%;
+}
+
+.comments-submit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 130px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 4px 9px 0 rgb(67 65 79 / 10%);
+}
+
+.comments-submit p,
+textarea,
+input {
+  padding: 20px 0;
+  text-align: left;
+  justify-content: left;
+  outline: none;
+}
+
+.comments-submit textarea {
+  padding: 20px 2px 2px 20px;
+  height: 200px;
+  width: 100%;
+}
+
+form > input#name,
+form > input#email {
+  padding: 1px 2px 1px 20px;
+  height: 40px;
+  width: 100%;
+}
+
+form > input#send_comment {
+  color: white;
+  background-color: #6747c7;
+  border: none;
+  border-radius: 3px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+form > input#send_comment:hover,
+form > input#send_comment:active {
+  background-color: #5033a8;
+  transition: 0.3s ease-in-out;
+}
+
+/* -------------------- STYLING OF THE BANNER -------------------- */
 
 .banner {
   display: flex;
@@ -452,7 +552,7 @@ a.a_style {
   border: 1px solid #ff4546;
   border-radius: 3px;
   padding: 15px 120px;
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .banner-button a:hover,
@@ -461,11 +561,7 @@ a.a_style {
   background-color: red;
 }
 
-/* 
-URL for the CTA banner: www.hostinger.com.br/tutoriais/wp-content/themes/tutorialstheme/public/css/../images/bg-blog.svg
-*/
-
-/* STYLING OF THE FOOTER */
+/* -------------------- STYLING OF THE FOOTER -------------------- */
 
 .container {
   display: flex;

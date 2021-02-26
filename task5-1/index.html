@@ -9,7 +9,13 @@
 </head>
 <body>
     <header class="main-header">
-        <img src="images/logo.png" alt="Hostinger logo" class="main-logo">
+        <!-- <img src="images/logo.png" alt="Hostinger logo" class="main-logo"> -->
+        <img
+            class="main-logo" 
+            src="images/logo.png" 
+            alt="Copiar link" 
+            onmouseover="this.src='images/logo2.png';" 
+            onmouseout="this.src='images/logo.png';">
         <nav class="main-nav">
                 <ul class="main-nav__items">
                     <li class="main-nav__item">
@@ -311,6 +317,7 @@ começar de algum lugar.
                                     alt="Foto da autora Ariane Gonçalves.">
                                 <span>
                                     Ariane G. / <a href="https://www.hostinger.com.br/tutoriais/author/arianegoncalves/">@arianegoncalves</a>
+                                    <br>
                                     Ariane é SEO Manager na Hostinger Brasil e está há três anos na "casa" 
                                     atuando com os times de conteúdo, localização e SEO. Formada em Comunicação 
                                     Social com ênfase em Jornalismo, mantém o compromisso diário de contar para 
@@ -422,98 +429,133 @@ começar de algum lugar.
             </div>
 
         </section>
-<!-- 
-        <section class="comments">
-            <div>
-                <figure>
-                    <img 
-                    src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" 
-                    alt="Avatar do usuário"
-                    height="50px">
-                </figure>
-                <h4>António</h4>
-                <h6>outubro 16 2018</h6>
-                <p>Muito bom. Me ajudou muito.</p>
-                <BUTTON>RESPONDER</BUTTON>
+
+        <section class="comment-area">
+            <div class="comments-container">
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>António<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">outubro 16 2018</p>
+                        <p>Muito bom. Me ajudou muito.</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/1d0105dde700d91a25fa3cdaa5e1cb0f?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Altemar Bitencourt<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">fevereiro 14 2019</p>
+                        <p>Bom Dia; Excelente e oportuno em um mercado sempre crescente e que todos os dias apresenta mudanças, melhoramentos e ferramentas para aprendizado e desenvolvimento , Front End e Back End, requisitos igualmente sempre cobrados pelo mercado. Parabéns e espero novidades e atualizações dos assuntos e alternativas.</p>
+                    </div>
+                </div>
+                <div class="comments-comment reply">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/bf95b007e70f514d10932901964df32d?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Ariane G.</h3>
+                        <p class="comment-date">Respondeu em fevereiro 14 2019</p>
+                        <p>Obrigada pelo feedback, Altemar. É isso mesmo, não podemos ficar desatualizados em profissão nenhuma! ;)</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Felipe<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">março 14 2019</p>
+                        <p>Conteúdo excelente! Bastante esclarecedor sobre como começar essa jornada de desenvolvedor web. Obrigado pelas informações.</p>
+                    </div>
+                </div>
+                <div class="comments-comment reply">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/bf95b007e70f514d10932901964df32d?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Ariane G.</h3>
+                        <p class="comment-date">Respondeu em março 18 2019</p>
+                        <p>Obrigada pelo feedback, Felipe. E muito sucesso nessa jornada ;)</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Claudio Txicassa<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">agosto 21 2019</p>
+                        <p>o conteúdo foi gratificante, e agradeço muito.... pretendo ser um bom desenvolvedor de paginas web obrigado</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>alekisandro<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">setembro 30 2019</p>
+                        <p>ótimo parabéns!!!!</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Valderli Gomes<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">outubro 01 2019</p>
+                        <p>Comentário de bom nível, estou interessado de mais informações.</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Odir Rosa Alves da Costa<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">janeiro 09 2020</p>
+                        <p>muito interessante me abriu um novo leque</p>
+                    </div>
+                </div>
+                <div class="comments-comment">
+                    <div class="comments-comment__image">
+                        <img src="https://secure.gravatar.com/avatar/22f1b12c980a55fa7feae59336e82bb3?s=96&d=mm&r=g" alt="avatar">
+                    </div>
+                    <div class="comments-comment__text">
+                        <h3>Rafael M<a class="comment-reply" href="#">RESPONDER</a></h3>
+                        <p class="comment-date">março 08 2020</p>
+                        <p>O conteúdo está ótimo para quem quer começar no Desenvolvimento Web!</p>
+                    </div>
+                </div>
+                <div class="comments-submit">
+                    <h2>Deixe uma resposta</h2>
+                    <form>
+                        <p>Comentário*</p>
+                        <textarea name="comment" id="comment" placeholder="Insira seu comentário" required></textarea>
+                        <p>Nome*</p>
+                        <input type="text" name="comment" id="name" placeholder="Insira seu nome" required>
+                        <p>Email*</p>
+                        <input type="email" name="comment" id="email" placeholder="Insira seu email" required>
+                        <p>
+                            <input type="checkbox" name="comment" id="terms" required>
+                            <br>
+                            <label for="terms">
+                            Nós - e nossos parceiros - usamos cookies para oferecer nossos serviços e mostrar propagandas baseadas em seus interesses. Ao usar nosso website você concorda ao uso de cookies conforme explicado em nossa Política de Cookies.
+                            </label>
+                        </p>
+                        <input id="send_comment" type="button" value="Enviar resposta">
+                        <p class="comments-submit__footer">Esse site utiliza o Akismet para reduzir spam. <strong>Aprenda como seus dados de comentários são processados.</strong></p>
+                    </form>
+                </div>
             </div>
-            <div>
-                <figure>
-                    <img 
-                    src="https://secure.gravatar.com/avatar/493c97d82ad1b0516b2cf8ab7ab6ce43?s=96&d=mm&r=g" 
-                    alt="Avatar do usuário"
-                    height="50px">
-                </figure>
-                <h4>Altemar Bitencourt</h4>
-                <h6>fevereiro 14 2019
-                </h6>
-                <p>Bom Dia; Excelente e oportuno em um mercado sempre crescente e que todos os dias apresenta <br> mudanças, melhoramentos e ferramentas para aprendizado e desenvolvimento , Front End e Back <br> End, requisitos igualmente sempre cobrados pelo mercado. Parabéns e espero novidades e atualizações <br> dos assuntos e alternativas.</p>
-                <BUTTON>RESPONDER</BUTTON>
-            </div>
-            <div>
-                <figure>
-                    <img 
-                    src="https://secure.gravatar.com/avatar/bf95b007e70f514d10932901964df32d?s=96&d=mm&r=g" 
-                    alt="Foto da autora Ariane Gonçalves."
-                    height="50px">
-                </figure>
-                <h4>Ariane G.</h4>
-                <h6>Respondeu em fevereiro 14 2019</h6>
-                <p>Muito bom. Me ajudou muito.</p>
-                <BUTTON>RESPONDER</BUTTON>
-            </div>
-            <br>
-            <form>
-                <h2>Deixe uma resposta</h2>
-                <div>
-                    <label for="comment"><p>Comentário*</p></label>
-                    <textarea 
-                    name="comment" 
-                    id="comment" 
-                    cols="60" 
-                    rows="10" 
-                    placeholder="Insira seu comentário">
-                    </textarea>
-                </div>
-                <br>
-                <div>
-                    <label for="name" name><p>Nome*</p></label>
-                    <input 
-                    type="text" 
-                    name="nome" 
-                    id="name" 
-                    placeholder="Insira seu nome" 
-                    required>
-                </div>
-                <br>
-                <div>
-                    <label for="email"><p>Email*</p></label>
-                    <input 
-                    type="email" 
-                    name="email" 
-                    id="email" 
-                    placeholder="Insira seu email" 
-                    required>
-                </div>
-                <br>
-                <input 
-                type="radio" 
-                name="terms" 
-                id="terms" 
-                required>
-                <label for="terms">
-                <p>Nós - e nossos parceiros - usamos cookies para oferecer nossos serviços e mostrar propagandas baseadas em seus interesses. <br> Ao usar nosso website você concorda ao uso de cookies conforme explicado em nossa Política de Cookies.</p>
-                </label>
-                <div>
-                    <input 
-                    type="submit" 
-                    name="submit" 
-                    value="Enviar resposta"/>
-                </div>
-                <p>Esse site utiliza o Akismet para reduzir spam. <a href="https://akismet.com/privacy/"><strong>Aprenda como seus dados de comentários são processados.</strong></a></p>
-            </form>
         </section>
-    -->
-        <section>
+
+        <section class="purple-banner">
             <div class="banner">
                 <div class="banner-text">
                     <b>Faça parte da Hostinger agora!</b>
