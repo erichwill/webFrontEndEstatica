@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://foursquare.com/static/img/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Foursquare</title>
+    <link href="../css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <a href="#">
+                <svg>
+                    <path fill="currentColor" d="M0 .677h19.438v3.19H3.227V12.8h14.409v3.19H3.226V28.9H0V.677zM21.283 14.899C21.283 6.53 26.761 0 35.17 0c8.368 0 13.773 6.567 13.773 14.899 0 8.482-5.704 14.709-13.773 14.709-8.11 0-13.887-6.227-13.887-14.71zm24.203-.037c0-6.603-4.016-11.632-10.32-11.632S24.81 8.26 24.81 14.862c0 6.794 4.392 11.56 10.356 11.56 5.931-.005 10.32-4.73 10.32-11.56zM53.063 18.503V.677h3.263v17.9c0 5.291 2.74 7.805 7.62 7.805 4.728 0 7.805-2.364 7.805-7.769V.677h3.263V18.54c0 7.393-4.542 11.07-11.069 11.07-6.453 0-10.883-3.64-10.883-11.107zM80.416.677h11.71c5.627 0 9.044 3.604 9.044 8.106 0 3.154-1.652 5.74-4.842 7.056 3.603 2.102 2.364 6.904 5.554 13.061h-3.676c-1.875-2.814-1.615-12.158-6.417-12.158h-8.142V28.9H80.42V.677h-.004zm11.632 12.871c3.413 0 5.818-1.988 5.818-4.915 0-2.777-2.178-4.765-5.818-4.765h-8.405v9.68h8.405zM104.764 20.826l3.154-.712c.563 3.902 3.263 6.23 7.656 6.23 3.939 0 7.056-1.838 7.056-4.842 0-2.137-1.575-3.94-7.729-5.777-6.979-1.988-9.307-4.543-9.307-8.296C105.586 2.591 109.489 0 115.157 0c6.341 0 9.158 3.227 10.134 7.656l-3.154.712c-.789-3.64-3.263-5.178-7.093-5.178-3.603 0-6.154 1.352-6.154 3.94 0 2.1 1.652 3.716 7.356 5.514 6.794 2.101 9.721 4.393 9.721 8.745 0 5.405-4.543 8.219-10.32 8.219-6.044 0-10.17-3.15-10.883-8.782zM128.896 14.899C128.896 6.53 134.373 0 142.782 0c8.369 0 13.773 6.567 13.773 14.899 0 4.166-1.388 7.769-3.716 10.397a96.329 96.329 0 013.303 3.453L153.815 31a151.824 151.824 0 00-3.454-3.567c-2.138 1.389-4.692 2.178-7.579 2.178-8.109-.003-13.886-6.23-13.886-14.712zm19.024 10.133a83.143 83.143 0 00-3.303-3.04l2.251-2.288a96.516 96.516 0 013.526 3.227c1.688-2.024 2.701-4.802 2.701-8.069 0-6.603-4.016-11.632-10.32-11.632s-10.357 5.029-10.357 11.632c0 6.794 4.389 11.56 10.357 11.56 1.918-.005 3.647-.49 5.145-1.39zM160.838 18.503V.677h3.264v17.9c0 5.291 2.741 7.805 7.619 7.805 4.729 0 7.806-2.364 7.806-7.769V.677h3.263V18.54c0 7.393-4.542 11.07-11.069 11.07-6.454 0-10.883-3.64-10.883-11.107zM195.382.677h3.826l10.96 28.22h-3.453l-3.191-8.22h-12.498l-3.153 8.22h-3.527L195.382.677zm6.871 16.85L197.334 4.58l-5.029 12.948h9.948zM213.193.677h11.709c5.628 0 9.044 3.604 9.044 8.106 0 3.154-1.651 5.74-4.842 7.056 3.604 2.102 2.365 6.904 5.555 13.061h-3.676c-1.875-2.814-1.615-12.158-6.417-12.158h-8.142V28.9h-3.227V.677h-.004zm11.632 12.871c3.413 0 5.818-1.988 5.818-4.915 0-2.777-2.178-4.765-5.818-4.765h-8.405v9.68h8.405zM238.865.677h19.664v3.19h-16.437V12.8h15.199v3.19h-15.199v9.684h16.774V28.9h-20.001V.677z"></path>
+                </svg>
+            </a>
+        </div>
+        <nav class="main-header__nav">
+            <ul class="main-header__nav-items">
+                <li class="main-header__nav-item nav-button-std">Products</li>
+                <li class="main-header__nav-item nav-button-std">Resources</li>
+                <li class="main-header__nav-item nav-button-std">Partners</li>
+                <li class="main-header__nav-item nav-button-std">Company</li>
+                <li class="main-header__nav-item nav-button-1">Log In</li>
+                <li class="main-header__nav-item nav-button-2">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-container">
+            <video class="video-container__video" loading="lazy" alt="an aerial video of a city with closed streets for a festival." src="//videos.ctfassets.net/exg8oyvb0wfw/1CKb11xnbaBz6ePlX0Zxdr/5d86ce674ca130d29c26e2df84859ff6/FSQ_Homepage_2-compressed.mp4" autoplay="" muted="" playsinline="" style="opacity: 1;"></video>
+        </div>
+        <div class="itsFoursquare-container">
+            <div class="itsFoursquare-container__left">
+                <h2>If it tell you where, it's probably built on Foursquare</h2>
+            </div>
+            <div class="itsFoursquare-container__right">
+                <div class="itsFoursquare-container__right-top">
+                    <h4>With uncompromising accuracy, accessibility, scale, and respect for consumer privacy, Foursquare is the location platform the world trusts.</h4>
+                </div>
+                <div class="itsFoursquare-container__right-bottom">
+                    <ul  class="itsFoursquare-container__buttons">
+                        <li class="itsFoursquare-container__button nav-button-1">Contact Us
+                            <svg class="link__icon"><path d="M13.125 2.813H3.75c-.563 0-.938.374-.938.937v6.563c0 .562.376.937.938.937H7.5v-.938H3.75V3.75h9.375v6.563H9.75L7.5 13.5l.75.563 1.969-2.813h2.906c.563 0 .938-.375.938-.938V3.75c0-.563-.376-.938-.938-.938z" fill="currentColor"></path><path d="M1.875 8.438H.937V2.343c0-.797.61-1.406 1.407-1.406h6.094v.937H2.343c-.281 0-.469.188-.469.469v6.094z" fill="currentColor"></path></svg>
+                        </li>
+                        <li class="itsFoursquare-container__button nav-button-2 our-story-btn">Our Story
+                            <img class="link__icon-2" src="media/smallarrow.png" alt="seta"
+                            onmouseover="this.src='media/bigarrow.png';"
+                            onmouseout="this.src='media/smallarrow.png';">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="theBest-container">
+            <div class="theBest-container__header">
+                <h3>Join the best who trust in Foursquare</h3>
+            </div>
+            <div class="theBest-container__logos-Box">
+                <ul class="theBest-container__logos">
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/3wEB5kxx2GHSuqhYfKdJrb/f297eb11d549d7a91a4a42a72d0f60fb/Logo___snapchat.svg?&amp;q=85" alt="The logo of snapchat">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/uTAvhTR5CqiD0fRpevKAk/ce6d019402218c3ddbc969be6295d677/airbnb_horizontal_lockup_web.png?&amp;q=85" alt="Airbnb's logo">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/3gi22a7c2AxhcGWb0mgHZb/01e9d9c91379adeaa822d9c6ebe33bbb/Uber_logo_2018.png?&amp;q=85" alt="Logo of Uber">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/1MDJMwI32yAUbbjS4PqPu9/31ccecfbf83005ac58fc88dc79028e12/twitter.png?&amp;q=85" alt="Twitter logo">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/3z5oGbAzg4eqtDbuYqZPqI/b9a0d53a6156bbb88ab8bbdbc85edc9e/Spotify_Logo_RGB_Green-2.svg?&amp;q=85" alt="Spotify logo">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/2GqiypKpFgXrRxT2LnXEW9/1c4f84d70e37ae9496bdfc8285829c99/Logo___global-samsung-logo-2.svg?&amp;q=85" alt="The logo Samsung">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/3JwCylTIy1Xm5j5CGE6ZE9/3c841ff81b14c5a1a1d13c92c8f576c4/AWS_logo_RGB.png?&amp;q=85" alt="The logo of Amazon">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/6QRrhHfhnog1wuYKwtx5M5/7e4ceafa1dff8e347acd798ede1799a7/Logo___AccuWeather_Logo.svg.png?&amp;q=85" alt="The logo of Accuweather">
+                    </li>
+                    <li class="logos-list__item">
+                       <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/1e0UGR4EiXeJFdbpz9ekTR/248c4a33f62aed99cb8d80f1525414d0/apple.png?&amp;q=85" alt="Apple Logo">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/2RYojKm1czzdiyJtgomYso/3a82bc00adaf6f947de24cfdb74ff148/Logo___Microsoft-Logo.png?&amp;q=85" alt="The logo of Microsoft">
+                    </li>
+                    <li class="logos-list__item">
+                        <img loading="lazy" class=" logo__icon" src="//images.ctfassets.net/exg8oyvb0wfw/2bpdgZLFV4mP2K52v035LG/1fd57139bfd58afcea0ffe17a1c35727/logo-snowflake-01__1_.png?&amp;q=85" alt="The logo of the company Snowflake">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="howHelp-container">
+            <div class="howHelp-container__top">
+                <p>[solutions for your business]</p>
+                <h3>How can Foursquare help drive your business forward?</h3>
+            </div>
+            <div class="howHelp-container__bottom">
+                <div class="howHelp-container__bottom-left">
+                    <img src="https://images.ctfassets.net/exg8oyvb0wfw/37hGtoX6pqflr9ssCm0CHr/c0e561bd04700589daad66b8174a32ac/pexels-ketut-subiyanto-4350217.jpg?w=1920&q=75" alt="Three people talking over a coffee and a phone.">
+                </div>
+                <div class="howHelp-container__bottom-right">
+                    <p>[build with Foursquare]</p>
+                    <h4>Create experiences your users will crave</h4>
+                    <p>Bring your ideas to life with solutions designed for app developers. Imagine the personalized functionalities you will deliver when you have the most comprehensive map of the world and the ability to understand human movement. Some of the largest brands are using our tools to increase the utility, engagement, and delight their users experience on a daily basis, and you can too.</p>
+                    <p>Learn more about:</p>
+                    <a href="#" class="howHelp-button">/places</a>
+                    <a href="#" class="howHelp-button">/pilgrim SDK</a>
+                </div>
+            </div>
+           
+            <div class="howHelp-container__bottom">
+                <div class="howHelp-container__bottom-right">
+                    <p>[data for analytics]</p>
+                    <h4>Solve your most complex business problems</h4>
+                    <p>Information about people and information about places - we package them together into practical and flexible data sets that you can add in your BI tools and customer databases. Urban planning, financial modeling, and customer segmentation are just a few areas where an understanding of human movement will lead to smarter outcomes.</p>
+                        <p>Learn more about:</p>
+                        <a href="#" class="howHelp-button">/visits</a>
+                        <a href="#" class="howHelp-button">/places</a>
+                        <a href="#" class="howHelp-button">/audience</a>
+                </div>
+                <div class="howHelp-container__bottom-left">
+                    <img src="https://images.ctfassets.net/exg8oyvb0wfw/2ZD2CQ8RHyEBtoWjb2O3c3/6b5e27841c072c1f61905c4e7b13d2c5/tobias-CyX3ZAti5DA-unsplash.jpg?w=1920&q=75" alt="Tablet showing a map.">
+                </div>
+            </div>
+           
+            <div class="howHelp-container__bottom">
+                <div class="howHelp-container__bottom-left">
+                    <img src="https://images.ctfassets.net/exg8oyvb0wfw/1CIRo8OqT8m5HLMyaUkJBh/94a2129f6087a33e92427ae8f70d9960/window_shopping.jpg?w=1920&q=75" alt="Person window shopping.">
+                </div>
+                <div class="howHelp-container__bottom-right">
+                    <p>[effectively advertise]</p>
+                    <h4>Transform your advertising with progressive solutions</h4>
+                    <p>Effective campaigns are powered by real-world data. By incorporating your customers’ behaviors - the places they go, the visits they make - into your strategy, success will mean more than clicks and views. Bring more customers into your stores with located-based targeting and identify the top drivers of incremental foot traffic to optimize your media plan.</p>
+                    <p>Learn more about:</p>
+                    <a href="#" class="howHelp-button">/audience</a>
+                    <a href="#" class="howHelp-button">/proximity</a>
+                    <a href="#" class="howHelp-button">/attribution</a>
+                </div>
+            </div>
+           
+            <div class="howHelp-container__bottom">
+                <div class="howHelp-container__bottom-right">
+                    <p>[media managed services]</p>
+                    <h4>Capitalize on a managed service that innovates with location</h4>
+                    <p>You’ve built your brand and we’re here to deliver its message. With our complete suite of in-house offerings, from media planning to creative development to attribution measurement, your marketing investment will move people into your stores.</p>
+                        <p>Learn more about:</p>
+                        <a href="#" class="howHelp-button">/pinpoint</a>
+                        <a href="#" class="howHelp-button">/audience</a>
+                </div>
+                <div class="howHelp-container__bottom-left">
+                    <img src="https://images.ctfassets.net/exg8oyvb0wfw/3dPyLPph1hHOSxYpexp2wZ/08ff8b3c1a95c4f8f1fc32c4e8ccda45/stefan-stefancik-Ue2-23uBwNw-unsplash__1___1_.jpg?w=1920&q=75" alt="Person using a phone.">
+                </div>
+            </div>
+        </div>
+        <div class="banner-container">
+            <h3>Get in touch with our location experts.<br>Together, we’ll move your business forward.</h3>
+            <a href="#" class="banner-container__button">
+                Contact Us
+                <svg class="link__icon"><path d="M13.125 2.813H3.75c-.563 0-.938.374-.938.937v6.563c0 .562.376.937.938.937H7.5v-.938H3.75V3.75h9.375v6.563H9.75L7.5 13.5l.75.563 1.969-2.813h2.906c.563 0 .938-.375.938-.938V3.75c0-.563-.376-.938-.938-.938z" fill="currentColor"></path><path d="M1.875 8.438H.937V2.343c0-.797.61-1.406 1.407-1.406h6.094v.937H2.343c-.281 0-.469.188-.469.469v6.094z" fill="currentColor"></path></svg>
+            </a>
+        </div>
+        <div class="explore-container">
+            <h2>Explore the power of location with Foursquare Places</h2>
+        </div>
+        <div class="find-container">
+            <div class="find-container__left">
+                <div class="find-container__left-top">
+                    <p>Help me find</p>
+                    <h2>best <i class="fas fa-sort-down"></i></h2>
+                    <h2>pizza <i class="fas fa-sort-down"></i></h2>
+                    <h2>in New York City <i class="fas fa-sort-down"></i></h2>
+                    <button class="find-container__left-top-button">Find Now</button>
+                </div>
+                <div class="find-container__left-bottom">
+                    <img src="https://foursquare.com/static/img/cityguide-logo.png" alt="foursquare pink logo">
+                    <h3>Looking for more great places? Visit <a href="#">Foursquare City Guide</a></h3>
+                </div>
+            </div>
+            <div class="find-container__right">
+                <div class="find-container__right-card">
+                    <img src="https://fastly.4sqi.net/img/general/500x400/80572832_KUuikwa4RAaiRYpdQlLoC5H0JH9sWULQWwbLZWViV2s.jpg" alt="eataly shop">
+                    <p class="place__rating"><span>9.3</span> / 10</p>
+                    <h4>Eataly Flatiron</h4>
+                    <p>New York, NY</p>
+                    <p>Among the gastronomic greatest hits worth checking out here: handmade mozzarella, oysters, veal and lamb stuffed ravioli, and gelato. And lots and lots of wine.</p>
+                </div>
+                <div class="find-container__right-card">
+                    <img src="https://fastly.4sqi.net/img/general/500x400/5339676_sr1RVQ5IHpXPLu1VR0kSJS7yxsY_d-zy1S1st74Y3IU.jpg" alt="pizza marguerita">
+                    <p class="place__rating"><span>9.3</span> / 10</p>
+                    <h4>Paulie Gee's</h4>
+                    <p>Brooklyn, NY</p>
+                    <p>Try the fiery Hellboy: chili pepper-infused honey drizzled over a blistered pie w/ sopressata picante, creamy fior di latte & grated Parmigiano-Reggiano. It's one of our #100best dishes & drinks 2011.</p>
+                </div>
+                <div class="find-container__right-card">
+                    <img src="https://fastly.4sqi.net/img/general/500x400/4412143_lG-y892iob8DXqjvEOjVqmiIGqVFv6UhD6yyNXG1cZE.jpg" alt="restaurant facade">
+                    <p class="place__rating"><span>9.2</span> / 10</p>
+                    <h4>Rubirosa Ristorante</h4>
+                    <p>New York, NY</p>
+                    <p>Try the vodka pizza, the crisp yet pliable thin-crust pies have a delicate char and a crackerlike crust. It's one of our #100best dishes & drinks 2011.</p>
+                </div>
+            </div>
+        </div>
+        <div class="acreditation-container">
+            <div class="acreditation-container__banner">
+                <p>[company news]</p>
+                <h2><a href="#">MRC grants Foursquare Visits first-ever accreditation</a></h2>
+            </div>
+        </div>
+        <div class="learnMore-container">
+            <div class="learnMore-container__top">
+                <p>[recent articles and news]</p>
+                <h3>Learn more about Foursquare</h3>
+            </div>
+            <div class="learnMore-container__bottom">
+                <div class="learnMore-container-card">
+                    <span class="green_line">___</span>
+                    <p>[blog]</p>
+                    <img   
+                        src="https://images.ctfassets.net/exg8oyvb0wfw/zaqJTRUlmZC8oYC9DeCcR/7f20d40d7568c44f863bc0a69e840ee9/New_York_Kiosk_Link_Digital_99933648_1255245.jpg?w=800&q=75" 
+                        alt="people walking on the street">
+                    <h6>Mar 02, 2021</h6>
+                    <h3>
+                        <a href="#" class="card-header-link">
+                        Using location data to help shoppers stay safe during COVID-19
+                        </a>
+                    </h3>
+                    <p>By using Intersection’s Link OOH digital kiosks and Foursquare’s location data, the two companies are helping to prevent overcrowding at essential businesses.</p>
+                    <a href="#" class="card-header-more">
+                        <span>Read</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="learnMore-container-card">
+                    <span class="green_line">___</span>
+                    <p>[white papers]</p>
+                    <img   
+                        src="https://images.ctfassets.net/exg8oyvb0wfw/3sKHZRyCRoKZvDKHvu3bO/2f4f62dab6259c882866f7910f980bad/jonas-leupe-dZmNJKFDuVI-unsplash.jpg?w=800&q=75" 
+                        alt="tv remote control">
+                    <h6>Mar 01, 2021</h6>
+                    <h3>
+                        <a href="#" class="card-header-link">
+                        How the evolution of TV is changing advertising
+                        </a>
+                    </h3>
+                    <p>Foursquare recently spoke with the Director of TV Partnerships at The Trade Desk to talk about how the evolution of TV is driving a ripple-effect across advertising.</p>
+                    <a href="#" class="card-header-more">
+                        <span>Read</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="learnMore-container-card">
+                    <span class="green_line">___</span>
+                    <p>[blog]</p>
+                    <img   
+                        src="https://images.ctfassets.net/exg8oyvb0wfw/hhgQmxNhQ32kYMftXF7ku/61d39c2c3919cf100ace7facdc166f51/Blog_thumbnail_-_Carto.jpg?w=800&q=75" 
+                        alt="carto logo">
+                    <h6>Feb 25, 2021</h6>
+                    <h3>
+                        <a href="#" class="card-header-link">
+                        Foursquare Offers Location Data in CARTO Data Observatory
+                        </a>
+                    </h3>
+                    <p>Foursquare partners with CARTO to bring Foursquare's point-of-interest and foot traffic data to CARTO’s enterprise customers via the CARTO Data Observatory.</p>
+                    <a href="#" class="card-header-more">
+                        <span>Read</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+                <div class="learnMore-container-card">
+                    <span class="green_line">___</span>
+                    <p>[blog]</p>
+                    <img   
+                        src="https://images.ctfassets.net/exg8oyvb0wfw/6H9XNKPmmy0TF4bQHipyTH/60f269edfc54cdebc072d9a6fa4b3016/Blog_thumbnail_Korem__1_.jpg?w=800&q=75" 
+                        alt="KOREM logo">
+                    <h6>Feb 16, 2021</h6>
+                    <h3>
+                        <a href="#" class="card-header-link">
+                        Foursquare partners with Korem to provide customers with geospatial solutions
+                        </a>
+                    </h3>   
+                    <p>Foursquare partners with Korem, the geospatial solutions experts, to bring location technology to Korem’s expanded network of enterprises across a variety of industries.</p>
+                    <a href="#" class="card-header-more">
+                        <span>Read</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top__column footer-top-img">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 67 81">
+                    <path fill="currentColor" d="M.703 0h24.764v4.064H4.814v11.379h18.358v4.064H4.814v16.449H.704V0zM0 68.043l4.018-.908c.717 4.972 4.157 7.938 9.754 7.938 5.018 0 8.99-2.342 8.99-6.169 0-2.723-2.007-5.019-9.852-7.36C4.018 59.01 1.052 55.757 1.052 50.98c0-6.17 4.972-9.465 12.194-9.465 8.077 0 11.667 4.11 12.91 9.753l-4.018.908C21.132 47.54 17.98 45.58 13.1 45.58c-4.59 0-7.84 1.723-7.84 5.019 0 2.677 2.104 4.735 9.372 7.03 8.655 2.677 12.384 5.596 12.384 11.141 0 6.886-5.787 10.47-13.148 10.47C6.17 79.232.908 75.214 0 68.044zM31.128 60.487c0-10.662 6.979-18.982 17.692-18.982 10.661 0 17.547 8.367 17.547 18.982 0 5.307-1.77 9.898-4.735 13.245a122.024 122.024 0 014.209 4.4L62.875 81a192.912 192.912 0 00-4.4-4.544c-2.723 1.769-5.977 2.775-9.655 2.775-10.331 0-17.692-7.938-17.692-18.744zm24.237 12.91a105.44 105.44 0 00-4.208-3.874l2.868-2.914a123.314 123.314 0 014.492 4.11c2.151-2.578 3.441-6.117 3.441-10.279 0-8.413-5.117-14.819-13.148-14.819-8.03 0-13.194 6.406-13.194 14.82 0 8.654 5.592 14.725 13.194 14.725 2.445 0 4.642-.624 6.555-1.769z"></path>
+                </svg>
+            </div>
+            <div class="footer-top-nav">
+                <div class="footer-top-nav__top">
+                    <div class="footer-top__column column_two">
+                        <h4>Products</h4>
+                        <div class="footer__column2-top">
+                            <div class="footer__column2-part1">
+                                <p>[Platform]</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">Attribution</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Audience</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pilgrim SDK</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pinpoint</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Places</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Proximity</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Visits</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer__column2-part2">
+                                <p>[Apps]</p>
+                                <ul>
+                                    <li>
+                                        <a href="#">City Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marsbot For Airpods</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Panels App</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Swarm</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Labs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer__column2-bottom">
+                            <h4>Privacy</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policies</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms Of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Do Not Sell My Personal Info</a>
+                                </li>
+                                <li>
+                                    <a href="#">Opt Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-top__column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Reports</a>
+                            </li>
+                            <li>
+                                <a href="#">Location Glossary</a>
+                            </li>
+                            <li>
+                                <a href="#">Superuser Tools</a>
+                            </li>
+                            <li>
+                                <a href="#">For Developers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__column">
+                        <h4>Partners</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Our Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Partner Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#">Case Studies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Our Story</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Culture</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">For Good</a>
+                            </li>
+                            <li>
+                                <a href="#">Accreditarions</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Privacy Stance</a>
+                            </li>
+                            <li>
+                                <a href="#">Press</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Brand</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div  class="footer-top-nav__btm">
+                    <div class="footer-mid">
+                        <h3>Sign up for our newsletter</h3>
+                        <form>
+                            <label for="email">Email <span>*</span></label>
+                            <div class="inside-form">
+                                <input type="email" name="email" id="email">
+                                <button>Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>  
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Foursquare 2021 <br>
+            Lovingly made in NYC, CHI, SEA, SF & LA</p>
+            <div class="footer-media">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16">
+                    <path fill="currentColor" fill-rule="evenodd" d="M16 15.117a.883.883 0 01-.883.883H11.04V9.804h2.08l.311-2.415H11.04V5.847c0-.699.194-1.175 1.197-1.175h1.278v-2.16c-.221-.03-.98-.095-1.863-.095-1.843 0-3.106 1.125-3.106 3.192v1.78H6.461v2.415h2.085V16H.883A.883.883 0 010 15.117V.883C0 .395.395 0 .883 0h14.234c.488 0 .883.395.883.883v14.234z" clip-rule="evenodd"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path fill="currentColor" fill-rule="evenodd" d="M14.315 1.115A3.458 3.458 0 0011.769 0C9.845 0 8.283 1.583 8.283 3.534c0 .277.03.546.09.805C5.474 4.19 2.905 2.786 1.183.645a3.566 3.566 0 00-.472 1.779c0 1.225.616 2.307 1.552 2.941a3.455 3.455 0 01-1.58-.44v.043c0 1.713 1.202 3.142 2.798 3.465a3.437 3.437 0 01-1.575.062c.444 1.404 1.731 2.426 3.258 2.453A6.938 6.938 0 010 12.413 9.791 9.791 0 005.347 14c6.415 0 9.923-5.385 9.923-10.055 0-.154-.003-.308-.009-.458A7.106 7.106 0 0017 1.657a6.894 6.894 0 01-2.003.557A3.534 3.534 0 0016.531.259a6.906 6.906 0 01-2.216.856z" clip-rule="evenodd"></path>
+                  </svg>
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.098 0H1.902A1.9 1.9 0 000 1.897v12.205A1.9 1.9 0 001.902 16h12.196A1.9 1.9 0 0016 14.102V1.898A1.9 1.9 0 0014.098 0zM11.5 2.5A.5.5 0 0112 2h1.5a.5.5 0 01.5.5V4a.5.5 0 01-.5.5H12a.5.5 0 01-.5-.5V2.5zM8.02 4.949c1.699 0 3.077 1.375 3.077 3.07a3.073 3.073 0 01-3.077 3.07 3.073 3.073 0 01-3.077-3.07 3.074 3.074 0 013.077-3.07zm6.481 9.05a.5.5 0 01-.5.501H2a.5.5 0 01-.5-.5V6.5h2c-.26.375-.349 1.074-.349 1.519 0 2.677 2.184 4.855 4.868 4.855s4.867-2.178 4.867-4.855c0-.445-.063-1.133-.386-1.52h2V14z" fill="currentColor"></path>
+                </svg>
+                <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M16.013 1.176v13.647A1.177 1.177 0 0114.836 16H1.19a1.176 1.176 0 01-1.176-1.177V1.176A1.176 1.176 0 011.189 0h13.647a1.176 1.176 0 011.177 1.176zM4.719 6.118H2.366v7.53h2.353v-7.53zm.211-2.589a1.355 1.355 0 00-1.346-1.364h-.042a1.365 1.365 0 100 2.73A1.355 1.355 0 004.93 3.571v-.043zm8.73 5.544c0-2.264-1.44-3.144-2.87-3.144a2.683 2.683 0 00-2.382 1.215h-.066V6.118H6.13v7.53h2.353V9.641a1.562 1.562 0 011.412-1.684h.09c.748 0 1.303.47 1.303 1.656v4.033h2.353l.019-4.574z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -494,18 +494,44 @@ p.comment-date {
 }
 
 .comments-submit p,
+.comments-submit,
+label {
+  color: #43414f;
+}
+
+#comment {
+  resize: none;
+}
+
+.comments-submit p,
 textarea,
 input {
   padding: 20px 0;
   text-align: left;
   justify-content: left;
   outline: none;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.comments-submit textarea,
+input {
+  border-style: solid;
 }
 
 .comments-submit textarea {
   padding: 20px 2px 2px 20px;
   height: 200px;
   width: 100%;
+}
+
+.comments-submit textarea:focus,
+.comments-submit input:focus {
+  border-color: rgb(98, 72, 192);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: fixed;
 }
 
 form > input#name,
