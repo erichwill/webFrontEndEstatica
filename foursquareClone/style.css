@@ -109,6 +109,137 @@ header.main-header {
   cursor: pointer;
 }
 
+/* ------------------------- AREA: hover menu ------------------------- */
+
+.main-header__nav-items li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.main-header__nav-items li:hover .hover-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.hover-menu {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 75px;
+  transition: opacity 0.1s linear 0.2s, visibility 0.1s linear 0.2s;
+}
+
+div.hover-menu {
+  display: flex;
+  background-color: white;
+  padding: 50px;
+  column-gap: 100px;
+}
+
+.hover-menu__left {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.hover-menu__left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hover-menu__left-group {
+  display: flex;
+  column-gap: 20px;
+}
+
+.hover-menu__left-group:hover h4 {
+  color: #33f;
+}
+
+.hover-menu__left-group h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  align-self: center;
+  color: black;
+}
+
+img.hover-menu__left-small {
+  height: 22px;
+  width: 22px;
+  margin: 10px 0;
+}
+
+.hover-menu__left span,
+.hover-menu__left i {
+  color: #33f;
+}
+
+.hover-menu__left:hover span,
+.hover-menu__left:hover i {
+  color: #0e0e76;
+}
+
+.hover-menu__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover-menu__right p {
+  padding-left: 25px;
+}
+
+.hover-menu__right a {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  color: black;
+}
+
+.hover-menu__right a:hover {
+  color: #33f;
+  padding-left: 25px;
+  box-shadow: inset 2px 0 #33f;
+  transition: all 0.1s ease-out;
+}
+
+.hover_group:hover a {
+  color: #33f;
+  padding-left: 25px;
+  box-shadow: inset 2px 0 #33f;
+  transition: all 0.1s ease-out;
+}
+
+.hover_group:hover p {
+  color: #33f;
+  transition: all 0.1s ease-out;
+}
+
+.hover-menu p {
+  font-size: 0.8rem;
+}
+
+a.smaller-bottom-margin {
+  margin-bottom: 8px;
+}
+
+a.smaller-bottom-margin svg {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+p.moved-right {
+  padding-left: 66px;
+}
+
 /* ------------------------- AREA: main ------------------------- */
 
 main {
